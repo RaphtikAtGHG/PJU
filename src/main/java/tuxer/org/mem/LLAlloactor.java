@@ -91,7 +91,7 @@ public class LLAlloactor {
                 return;
             }
         }
-        throw new IllegalArgumentException("Invalid write operation");
+        throw new MemoryManagerError("Invalid write operation");
     }
 
     public byte[] read(int address, int size) {
@@ -102,7 +102,7 @@ public class LLAlloactor {
                 return data;
             }
         }
-        throw new IllegalArgumentException("Invalid read operation");
+        throw new MemoryManagerError("Invalid read operation");
     }
 
     public void memdump() {
