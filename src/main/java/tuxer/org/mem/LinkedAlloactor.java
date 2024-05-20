@@ -11,7 +11,7 @@ import java.util.ListIterator;
  * @version MMR0.0.1
  * @author RaphtikAtGHG
  */
-public class LLAlloactor {
+public class LinkedAlloactor {
 
     /**
      * A simple Memory-Block class
@@ -59,7 +59,7 @@ public class LLAlloactor {
      * The linked list allocator
      * @param size The size of the memory in bytes
      */
-    public LLAlloactor(int size) {
+    public LinkedAlloactor(int size) {
         mem = new byte[size];
         blocks = new LinkedList<>();
         blocks.add(new Block(0, size, true));

@@ -1,7 +1,7 @@
 package tuxer.org;
 
 import tuxer.org.mem.ArenaAllocator;
-import tuxer.org.mem.LLAlloactor;
+import tuxer.org.mem.LinkedAlloactor;
 import tuxer.org.mem.StackAllocator;
 
 public class Main {
@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Linked List Allocator Test
-        LLAlloactor allocator = new LLAlloactor(48);
+        LinkedAlloactor allocator = new LinkedAlloactor(48);
 
         int address = allocator.malloc(48);
 
